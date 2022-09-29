@@ -53,6 +53,7 @@ plt.show()
 
 ## Grafico de linhas
 df_2019.groupby("Mes_Venda")["Qtde"].sum().plot(marker = ".")
+plt.title("Mês X Quantidade")
 plt.xlabel("Mês")
 plt.ylabel("Total Produtos Vendidos")
 plt.legend()
@@ -60,7 +61,11 @@ plt.show()
 
 ## Grafico de dispersão
 plt.scatter(df_2019.Dia_Venda, df_2019.Receita)
+plt.title("Dia X Venda")
+plt.xlabel("Dia")
+plt.ylabel("Total Receita")
 plt.show()
+
 
 
 
